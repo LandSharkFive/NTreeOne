@@ -8,7 +8,7 @@ The is a C# Console-Mode Project.  Use Visual Studio 2022 and above to compile.
 
 ## Performance
 
-Performance is good. Performance depends on the number of items.
+Performance is good. Performance depends on the number of items. Tree Size grows by 60 at each level: 60, 3K, 216K, 12M and 777M.
 
 | Items | Time | Memory | Height |
 | --- | --- | --- | --- |
