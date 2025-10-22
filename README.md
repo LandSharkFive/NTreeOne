@@ -10,13 +10,13 @@ The is a C# Console-Mode Project.  Use Visual Studio 2022 and above to compile.
 
 Performance is good. Performance depends on the number of items.
 
-| Items | Time | Memory |
-| --- | --- | --- |
-| 1K | 1 ms | 52 mb |
-| 10K | 2 ms | 52 mb |
-| 100K | 4 ms | 52 mb |
-| 1M | 4 ms | 59 mb |
-| 10M | 4 ms | 122 mb |
+| Items | Time | Memory | Height |
+| --- | --- | --- | --- |
+| 1K | 1 ms | 52 mb | 3 |
+| 10K | 2 ms | 52 mb | 5 |
+| 100K | 4 ms | 52 mb | 5 |
+| 1M | 4 ms | 59 mb | 5 |
+| 10M | 4 ms | 122 mb | 5 |
 
 
 
