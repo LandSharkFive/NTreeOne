@@ -123,7 +123,7 @@
             {
                 Node a = new Node();
                 Node b = new Node();
-                int mid = n.Data.Count() / 2;
+                int mid = n.Data.Count / 2;
                 for (int i = 0; i < mid; i++)
                 {
                     a.Data.Add(n.Data[i]);
@@ -134,6 +134,7 @@
                 }
                 n.Data.Clear();
                 a.Key = b.Data[0];
+                b.Key = 0;
                 n.Child.Add(a);
                 n.Child.Add(b);
             }
