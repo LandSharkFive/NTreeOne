@@ -123,20 +123,24 @@
             {
                 Node a = new Node();
                 Node b = new Node();
+                Node c = new Node(); 
                 int mid = n.Data.Count / 2;
                 for (int i = 0; i < mid; i++)
                 {
                     a.Data.Add(n.Data[i]);
                 }
-                for (int j = mid; j < n.Data.Count; j++)
+                for (int j = mid; j < n.Data.Count - 1; j++) 
                 {
                     b.Data.Add(n.Data[j]);
                 }
+                c.Data.Add(n.Data[n.Data.Count - 1]);
                 n.Data.Clear();
                 a.Key = b.Data[0];
-                b.Key = 0;
+                b.Key = c.Data[0]; 
+                c.Key = 0; 
                 n.Child.Add(a);
                 n.Child.Add(b);
+                n.Child.Add(c);
             }
         }
 
@@ -227,8 +231,6 @@
                 a.WriteToStream(sw);
             }    
         }
-
-
 
     }
 }
